@@ -21,17 +21,17 @@ class PostsNew extends Component {
     return(
       <form>
         <Field
-          label="Title"
+          label="Username"
           name="title"
           component={this.renderField}
         />
         <Field
-          label="Categories"
+          label="Password"
           name="categories"
           component={this.renderField}
         />
         <Field
-          label="Post Content"
+          label="Snapchat Username"
           name="content"
           component={this.renderField}
         />
@@ -46,13 +46,13 @@ function validate(values){
 
   //Validate the inputs from 'values"'
   if (!values.title){
-    errors.title = "Enter a title!"
+    errors.title = "Enter ur username!"
   }
   if (!values.categories){
-    errors.categories = "Enter some categories!"
+    errors.categories = "1337 pws only"
   }
   if (!values.content){
-    errors.content = "Enter some content please!"
+    errors.content = "#weouthere"
   }
 
   return errors;
